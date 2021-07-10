@@ -1,0 +1,243 @@
+/*
+Theme Name: Instagram
+Author: Kenzie Academy
+Author URI: kenzie.com.br;
+Version: 1.0
+
+--------------------------------------------
+SUGESTÃO DE ESTRUTURAÇÃO BASE
+--------------------------------------------
+**** DECLARAÇÃO DE VARIÁVEIS
+**** BODY
+**** TOPO
+**** RODAPÉ
+**** PÁGINA INICIAL
+*/
+li {
+	list-style-type: none;
+  }
+a {
+	text-decoration: none;	
+}
+html {
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+}
+
+/* VARIÁVEIS */
+:root{
+	--main-bg-color: #262626;
+}
+
+/*BODY*/
+body{
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	padding: 0;	
+	flex-grow: initial;	
+}
+
+
+/*TOPO*/
+header{
+	display: flex;
+	flex-direction: row;
+  	background-color: #FDFDFD;
+	padding: 20px;
+	
+	
+}
+.logo {
+	
+	left: 450;
+	padding: 20px;
+	width: 300px;
+}
+
+
+
+/*PÁGINA INICIAL*/
+main {
+	max-width: 935px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+
+
+.profile-content{
+	display: flex;	
+	flex-direction: row;
+	align-items: center;
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	color:  var(--main-bg-color);
+	
+}
+
+.profile-photo {
+	padding: 20px;
+	margin-left: 30px;
+	
+}
+
+.profile-info {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+h1 {
+	padding-bottom: 20px;
+	font-size: 25px;
+}
+
+h2 {
+	padding-bottom: 10px;
+}
+
+.profile-info-contact {
+	padding-bottom: 40px;
+}
+
+
+
+.profile-data {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+span {
+	font-weight: bold;
+}
+
+/* destaques usuários */
+
+.highlighted-stories {	
+	padding: 40px;
+	position: relative;
+	left: -250px;
+	
+}
+.user-destak {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: flex-start;
+	padding: 0px;
+	flex-wrap: wrap;
+	
+		
+}
+
+.highlighted-stories li img {
+	width: 77px;	
+	padding: 5px;
+	border: 2px solid #81a1f3 ;
+	border-radius: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	
+
+	
+}
+
+.add-new-highlight img {
+	width: 77px;
+	
+}
+li {
+	margin-right: 50px;
+}
+
+figcaption {
+	display: none;
+}
+
+
+.profile-posts{
+	border-top: 1px solid rgb(233, 203, 208);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
+
+nav {
+	padding-top: 0px;
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 50px;	
+	flex-wrap: wrap;
+}
+
+nav .menu {
+	margin-right: 60px;
+	
+	
+	
+}
+
+.leg1 {
+	padding: 20px;
+	display: block;
+	border-top: 3px solid var(--main-bg-color);
+	color:  var(--main-bg-color);
+	text-transform: uppercase;
+	font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+.leg2, .leg3 {
+	padding: 20px;
+	display: block;
+	color:  var(--main-bg-color);
+	text-transform: uppercase;
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	
+}
+
+.posts {
+	display: flex;
+	max-width: 935px;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	
+
+}
+
+ li figure img {
+	 width: 293px;
+	 padding-bottom: 50px;
+	 
+ }
+
+ /*RODAPÉ*/
+.rodape {
+display: flex;
+flex-direction: column;	
+width: 935px;
+margin-top: 50px;background-color: #A5B2D2;
+align-items: center;
+font-family:'Helvetica', 'Arial', sans-serif;
+padding: 20px;
+color: #fff;
+flex-wrap: wrap;
+
+}
+
+.footer-nav a {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 10px;
+	margin-right: 10px;
+	color: var(--main-bg-color);
+	font-weight: bold;	
+	
+}
+
